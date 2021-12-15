@@ -22,7 +22,7 @@ pub struct Tile {
 impl Tile {
     pub fn new(x: i32, y: i32, z: i32, sprite: SheetSprites) -> Self {
         let scaled_x = x as f32 * (TILE_SIZE * TILE_SCALE);
-        let scaled_y = -y as f32 * (TILE_SIZE * TILE_SCALE);
+        let scaled_y = -y as f32 * (TILE_SIZE * TILE_SCALE); // inverted y axis
         Tile {
             min: Vec2::new(scaled_x, scaled_y),
             max: Vec2::new(scaled_x + x as f32, scaled_y + y as f32),

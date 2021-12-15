@@ -58,4 +58,5 @@ pub enum SheetSprites {
     BluePlatform07 = 61,
     BluePlatform08 = 62,
     Table01 = 14,
+    Table02 = 15,
 }
